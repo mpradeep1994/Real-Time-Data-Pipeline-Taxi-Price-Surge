@@ -1,9 +1,11 @@
 # Real
 REAL-TIME DATA PIPELINE TO ANALYZE TAXI PRICE SURGE         
 ```
-In this approach I focused on finding the Price behavior fot taxi fare for every hour. We can use Uber API or Lift API to get the price details through their API.
+In this approach I focused on finding the Price behavior fot taxi fare for every hour. We can use Uber API or Lift API to get the price
+details through their API.
 Collection price data from every location in United States for every 5 minutes is setup as a CRON job which ends up collecting large amount of data every day. 
-We should use a message broker to queue the data because it’s a real-time data and at the same time we need the order of the messages collected so Kafka can be used as a message broker as it solves this problem working in a distributed environment.
+We should use a message broker to queue the data because it’s a real-time data and at the same time we need the order of the messages
+collected so Kafka can be used as a message broker as it solves this problem working in a distributed environment.
 Apache Spark is used to process the streaming data by filtering and aggregating values and selecting all the required features for future processing.
 Apache Spark’s basic component is made up of RDD (Resilient Distributed Dataset) and it is processed in memory and based on lazy 
 execution in a distributed environment, it is capable of handling streaming data.
