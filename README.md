@@ -1,5 +1,5 @@
 
-#REAL-TIME DATA PIPELINE TO ANALYZE TAXI PRICE SURGE         
+# REAL-TIME DATA PIPELINE TO ANALYZE TAXI PRICE SURGE         
 ```
 In this approach I focused on finding the Price behavior fot taxi fare for every hour. We can use Uber API or Lift API to get the price details through their API.
 Collection price data from every location in United States for every 5 minutes is setup as a CRON job which ends up collecting large amount of data every day. 
