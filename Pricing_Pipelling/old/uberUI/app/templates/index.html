@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+  <title>Uber Price Surge</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="static/js/modernizr-1.5.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true">
+  </script>
+  <script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/maplabel/src/maplabel.js"></script>
+
+  <script src="static/js/map.js"></script>
+  <style>
+   .customBox {
+      background: yellow;
+      border: 1px solid black;
+      position: absolute;
+    }
+    .customBoxRed {
+      background: #D2691E;
+      border: 1px solid black;
+      position: absolute;
+      text-align:center;
+      font-size:145%;
+      font-family:sans-serif;
+      padding: 5px;
+      width:180px;
+    }
+    .customBoxBlue {
+      background: #1E90FF;
+      border: 1px solid black;
+      position: absolute;
+      text-align:center;
+      font-size:145%;
+      font-family:sans-serif;
+      padding: 5px;
+      width:180px;
+    }
+    </style>
+</head>
+
+
+
+
+
+<body>
+<div id="main">
+  <header>
+    <div id="strapline">
+      <div id="welcome_slogan">
+    <h3>Rise in Price</h3>
+      </div><!--close welcome_slogan-->
+    </div><!--close strapline-->      
+    <nav style="font-size:75%">
+      <div id="menubar">
+        <ul id="nav">
+        <li style="visibility:hidden"><a href="/blah">About</a></li>
+          <li class="current"><a href="/">Home</a></li>
+          <li><a href="/historicaldataanalysis">Batch Analysis</a></li>
+          <li><a href="/archdiagram">Architecture Diagram</a></li>
+        </ul>
+
+      </div><!--close menubar-->    
+    </nav>
+  </header>   
+  
+  
+  <div id="site_content">
+    <div class="content_item">
+    <h3>A real-time mapping of geolocation's in San Francisco where there is a price surge for Uber Cabs</h3> 
+      </div><!--close content-->
+    <div id="map-container">
+       <div id="map-canvas"></div>
+    </div>
+    <div id="content">
+      <div class="content_item">
+        <p style="text-align:justify">Rise in Price is a Data Engineering Project for the Galvanize MS in Data Science program.The above map displays a real time stream of geolocation data where price surge is happening for Uber Cabs in San Francisco. There is a job scheduler which runs every min to get real time data using uber API.Kafka is used for data ingestion and stream processing framework Spark Streaming is used to process and transform data .Data is stored in Hbase and UI which is built on Flask framework is used to show the real time location mapping of price surge and doing Batch Analysis.</p>
+      </div>
+
+    <div class="content_item">
+     <footer>
+      <span style="float: left; color:#FFF">
+        &nbsp&nbsp&nbsp&nbsp Deep Singh
+      </span> 
+      <span style="float: right; color:#FFF">
+        <a href="mailto:singh.deep@gmail.com">Email</a>     |
+        <a href="https://github.com/deepnarainsingh">Github</a>     |
+            <a href="https://www.linkedin.com/in/deepsingh">Linkedin</a>&nbsp&nbsp&nbsp&nbsp
+      </span>
+
+    </footer>
+    </div>
+
+      </div><!--close content-->   
+  </div><!--close site_content-->   
+  <div style="clear:both; float:right; margin-right:20px;font-size:125%" >Project for <img src="http://www.galvanize.com/wp-content/themes/galvanize/img/galvanize-logo.svg" style="vertical-align:middle" width="150px"/> MSDS Program</div>
+</div><!--close main-->
+
+</body>
+</html>

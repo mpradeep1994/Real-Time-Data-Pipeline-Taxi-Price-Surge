@@ -1,0 +1,2 @@
+* * * * * /home/admin1/anaconda/bin/python /home/admin1/Galvanize/FinalProjectDE/cronjob/uber_job_scheduler.py > /home/admin1/uber.log
+
